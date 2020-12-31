@@ -4,3 +4,6 @@ alias pg_stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.
 
 # cannot connect to postgres
 rm /usr/local/var/postgres/postmaster.pid
+
+# connect to database with psql
+psql "dbname=dbhere host=hosthere user=userhere password=pwhere port=5432 sslmode=require"
